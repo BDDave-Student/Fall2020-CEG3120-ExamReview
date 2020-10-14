@@ -12,12 +12,18 @@ Recommendation: since filling out every topic would get ugly, I recommend creati
 - push
 - pull
 - clone vs fork
+* Clone from repo as a copy to commit to
+* Fork from repo as a copy for your own repo
 - branch
+* Features
 - checkout
 - merge conflicts
+* Fixing differences from version A to your committing version B
 - stashing
+* Pausing development and storing changes in a hiding folder for you to return to later
 - clean vs reset
 - GitHub issues
+* Communication tool to report requirements, desired features, bugs, etc
 - GitHub pull requests
 
 ## Linux
@@ -51,7 +57,7 @@ Recommendation: since filling out every topic would get ugly, I recommend creati
   - Role of /etc/fstab
 - RAID 0, 1, 5, 6
   - Given situation, which RAID would you recommend?
-- ~~Backups & Imaging~~
+  * The higher the raid, the more resistant to faulting data the database can tolerate
 - cronjobs
   - Where to add a cronjob - crontab
   - Format of a cronjob
@@ -124,7 +130,6 @@ Recommendation: since filling out every topic would get ugly, I recommend creati
 - Conditionals (using the `test` command)
 - if statements
 - functions
-- ~~Regular expressions~~
 
 ## SSH
 
