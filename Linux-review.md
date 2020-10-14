@@ -1,0 +1,23 @@
+## Linux
+
+- file & directory permissions
+- ownership & groups
+- PATH manipulation
+- File System - what to expect in root folders
+  - /etc/
+  - /var/
+  - /proc/
+  - /dev/
+  - /bin/ & /sbin/
+  - /boot/
+  - /home/
+- User / group management
+  - Configuration files to note:
+    - /etc/passwd , /etc/group, /etc/shadow
+- Service management
+  - systemctl
+- System logs
+  - Log files can cause disk bloat
+  - journalctl
+    - Find user associated logs
+    - Find service related logs
