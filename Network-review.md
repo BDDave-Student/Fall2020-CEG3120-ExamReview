@@ -1,0 +1,45 @@
+## Networking
+
+- dotted quad (format of IPv4 address)
+- host
+- subnet
+  - Network prefix
+  - Subnet mask
+  - CIDR notation (substitute for long form subnet mask)
+- gateway
+- routing
+  - Read a routing table for where traffic will be routed
+- MAC addresses
+  - arp table associates MAC with IP
+- Hardware interface names (common)
+  - eth0, wifi0 / wlan0, lo
+- DNS
+  - Local hostname resolution
+    - Role of /etc/hosts
+    - Role of /etc/resov.conf
+- Ports (common)
+  - 22 (SSH), 80 (HTTP), 443 (HTTPS)
+  - Read output of netstat with flags (-n -t -l)
+- What an IP address tells you about the network:
+  - Private network prefixes:
+    - 10.0.0.0/8
+    - 192.168.0.0/16
+    - 172.16.0.0/12
+  - Local network prefixes:
+    - 127.0.0.0/8
+- Router (as separate hardware):
+  - NAT
+  - DHCP
+- Firewall
+  - INPUT, OUTPUT, FORWARD chains
+  - Can be managed at router level or host level
+  - Host level management in Linux: iptables
+  - Packet is blocked by first rule that matches in chain
+- Forward proxy vs VPN
+- Reverse proxies:
+  - Caching
+  - Load balancing (web servers)
+    - Monitor services?
+    - Allocation strategies
+    - Connection maintainence
+    - Session persistence
