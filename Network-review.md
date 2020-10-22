@@ -10,6 +10,7 @@
 - Default Gateway - bounded IP data sent to when outside network
 - routing
   - Read a routing table for where traffic will be routed
+    * Destination 10.0.0.x with netmask 255.255.255.0 will talk to all devices on 10.0.0.x network
   - MAC addresses:  Media Access Control/Manufacturer based ID 
   - arp table associates MAC with IP
 - Hardware interface names (common)
@@ -39,7 +40,11 @@
 - Forward proxy vs VPN
 - Reverse proxies:
   - Caching
-  - Load balancing (web servers)
+  - Load balancing (web servers):  Round Robin, Weighted Round Robin, Least Connections, Least Response Time
+    * Round Robin:  Prioritize First In to Bottom of List, looping
+    * Weighted Round Robin:  Factoring in X where X can be other connections still in load balancer, etc etc
+    * Least Connections:  Systems who have lowest connections are priority
+    * Least Response Time:  Systems who have faster response time are priority
     - Monitor services?
     - Allocation strategies
     - Connection maintainence
