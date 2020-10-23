@@ -14,10 +14,18 @@
 - User / group management
   - Configuration files to note:
     - /etc/passwd , /etc/group, /etc/shadow
-- Service management
-  - systemctl
+    - cat files for info
+    - passwd for user specific information (User ID, system in use)
+    - group for groups and users within groups (Group ID)
+    - shadow for encrypted password if not stored in passwd (root priv)
+- Service management:  Service is an application ran in background or waiting to be used (Apache/MySQL)
+  - systemctl: control services (systemd)
+    - status, start, stop, reload, restart
 - System logs
-  - Log files can cause disk bloat
-  - journalctl
+  - Log files can cause disk bloat - big read/write into system
+  - journalctl: service logs
+  - rsyslog: logging program
     - Find user associated logs
+      - journalctl \_UID=\[UID Value]
     - Find service related logs
+      -journalctl -u \[SERVICE NAME]
