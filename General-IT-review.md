@@ -10,6 +10,6 @@
     * Raid 0:  Introduction of Striping = split data across blocks; Introduction of performance increase in read/write. 
     * Raid 1:  Introduction of Mirroring = evolved striping across 2 blocks, evolved faster performance of read and write, fault tolerant
     * Raid 5 single parity (1 block works in place of 1 other block that has failed)  Raid 6 double parity
-- cronjobs
-  - Where to add a cronjob - crontab
-  - Format of a cronjob
+- cronjobs:  Time based scheduler to automate tasks given a specified time/period - * minutes, * hours, * day of month, * month, * day of the week
+  - Where to add a cronjob - cat /tmp/crontab
+  - Format of a cronjob - * * * * * \[script path]
