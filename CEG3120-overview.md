@@ -129,7 +129,7 @@ Recommendation: since filling out every topic would get ugly, I recommend creati
 
 - keys (private vs public)
 
-# Final
+# Final Overview for Fall 2020
 ## Bigger Topics
 
 - User management
