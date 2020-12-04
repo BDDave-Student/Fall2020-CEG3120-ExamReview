@@ -161,13 +161,13 @@ Recommendation: since filling out every topic would get ugly, I recommend creati
 
 ## System Files
 
-- /etc/hosts
-- /etc/hostname
+- /etc/hosts:  Configure alias names for host ip-to-DNS
+- /etc/hostname: Personal machine's renaming
 
 ## SSH
 
-- authorized_keys
-- config
+- authorized_keys:  A home for public keys
+- config:  A file to resolve IdentityFiles to Hosts
 - role of private vs public key
 
 ## Networking
